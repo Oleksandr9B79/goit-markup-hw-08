@@ -1,3 +1,9 @@
+.client__set {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .clients__permanent {
 	font-family: Roboto;
 	color: var(--title-text-color);
@@ -19,9 +25,24 @@
 	border: 1px solid var(--background-border);
 	border-radius: 4px;
 
-	&:hover {
-		fill: var(--accent-color);
-		border-color: var(--accent-color);
-		transition: 250ms var(--timing-funktion);
+	@media screen and (max-width: 767px) {
+		width: 210px;
+		height: 92px;
 	}
+
+	@media screen and (min-width: 768px) {
+		width: 226px;
+		height: 92px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 170px;
+		height: 92px;
+	}
+}
+
+.clients__link:hover {
+	fill: var(--accent-color);
+	border-color: var(--accent-color);
+	transition: 250ms var(--timing-funktion);
 }
