@@ -722,61 +722,8 @@ img {
 	cursor: pointer;
 }
 
-.features__grup {
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-columns: 1;
-	-moz-columns: 1;
-	columns: 1;
-}
-@media screen and (min-width: 768px) {
-	.features__grup {
-		-webkit-columns: 2;
-		-moz-columns: 2;
-		columns: 2;
-	}
-}
-@media screen and (min-width: 1200px) {
-	.features__grup {
-		-webkit-columns: 4;
-		-moz-columns: 4;
-		columns: 4;
-	}
-}
-
 .features__list {
 	display: block;
-}
-
-.features__box {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	gap: 30px;
-}
-@media screen and (min-width: 1200px) {
-	.features__box {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		justify-content: center;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
-		margin-bottom: 30px;
-		width: 270px;
-		height: 120px;
-		border-radius: 4px;
-		background-color: var(--baground-comands);
-	}
 }
 
 .features__text {
