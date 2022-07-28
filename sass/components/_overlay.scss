@@ -1,0 +1,22 @@
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 370px;
+	height: 294px;
+
+	transform: translateY(100%);
+
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	backdrop-filter: blur(3px);
+	background-color: rgba(33, 150, 243, 0.9);
+	padding: 63px 24px;
+	transition: transform 250ms var(--timing-funktion);
+}
+
+.portfolio-link:hover .overlay {
+	transform: translateY(0);
+	transition: 250ms var(--timing-funktion);
+}

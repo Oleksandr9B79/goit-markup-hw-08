@@ -1,0 +1,13 @@
+/** другий паршал*/
+body {
+	background-color: var(--background-position);
+	color: var(--title-text-color);
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	overflow-x: hidden;
+	&.no-scroll {
+		overflow: hidden;
+		// overflow-x: hidden;
+	}
+}

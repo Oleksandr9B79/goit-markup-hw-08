@@ -1,0 +1,53 @@
+.portfolio-text {
+	color: var(--title-text-color);
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+
+	&-work {
+		color: var(--transparent-text);
+		font-family: Roboto;
+		font-size: 16px;
+		line-height: 1.9;
+		letter-spacing: 0.03em;
+		margin-top: 4px;
+	}
+}
+.portfolio-text-work {
+	padding: 20px 24px;
+	border: 1px solid #eeeeee;
+	border-top: 0;
+}
+.portfolio-item {
+	cursor: pointer;
+	display: block;
+}
+.portfolio-item:focus,
+.portfolio-item:hover {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-port {
+	position: relative;
+	overflow: hidden;
+}
+.portfolio-item {
+	position: relative;
+	overflow: hidden;
+	transition-duration: 250ms;
+	transition-timing-function: var(--timing-funktion);
+	transition-delay: var(--timing-funktion);
+}
+.portfolio-desc {
+	display: block;
+	position: absolute;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.6;
+	letter-spacing: 0.03em;
+	color: #ffffff;
+	transition: 250ms var(--timing-funktion);
+}

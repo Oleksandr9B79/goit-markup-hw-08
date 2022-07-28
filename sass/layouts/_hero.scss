@@ -1,0 +1,141 @@
+.hero {
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background: var(--primary-text-color);
+
+	max-width: 1600px;
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero.jpg);
+
+	padding-top: 200px;
+	padding-bottom: 200px;
+	margin: 0 auto;
+}
+
+.container__hero {
+	display: block;
+}
+
+.container .container__bg {
+	width: 696px;
+}
+
+.container__bg {
+	word-wrap: normal;
+	color: var(--background-position);
+	font-family: Roboto;
+	font-size: 44px;
+	line-height: 1.4;
+	font-weight: 900;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+/* Button */
+.hero__button {
+	font-family: Roboto;
+	margin-top: 30px;
+	color: var(--background-position);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.9;
+	cursor: pointer;
+	background: var(--accent-color);
+	border-radius: 4px;
+	min-width: 200px;
+	height: 50px;
+	letter-spacing: 0.06em;
+	border: none;
+}
+
+/* Modal window styles */
+
+.modal__form {
+	padding: 40px;
+}
+
+.modal__title {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	color: var(--title-text-color);
+
+	margin: 0;
+}
+.modal__input {
+	width: 100%;
+	height: 40px;
+
+	padding-left: 40px;
+
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.modal__input:focus,
+.modal-coment:focus {
+	outline: var(--accent-color);
+	border: 1px solid #188ce8;
+	transition: 250ms var(--timing-funktion);
+}
+
+.modal__input:focus + .label__icons {
+	fill: var(--accent-color);
+	transition: 250ms var(--timing-funktion);
+}
+.modal__input:focus ~ .label__icons {
+	fill: var(--accent-color);
+}
+
+.modal__label {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+
+	letter-spacing: 0.01em;
+
+	color: var(--transparent-text);
+	padding-bottom: 4px;
+	padding-top: 10px;
+}
+
+.modal__label:not(:last-child) {
+	display: flex;
+}
+
+.label__icons {
+	position: absolute;
+	left: 40px;
+	transform: translate(100%, 100%);
+}
+
+.modal-coment::placeholder {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.01em;
+
+	color: rgba(117, 117, 117, 0.5);
+}
+.modal-coment {
+	resize: none;
+	width: 100%;
+	height: 120px;
+
+	padding: 12px 16px;
+
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	cursor: pointer;
+}

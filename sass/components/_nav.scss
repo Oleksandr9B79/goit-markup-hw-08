@@ -1,0 +1,26 @@
+.nav__site .link {
+	font-family: Roboto;
+	font-weight: 500;
+	color: var(--title-text-color);
+	font-size: 14px;
+	line-height: 1.1;
+	letter-spacing: 0.02em;
+
+	&__site .link:hover,
+	&__site .link:focus {
+		color: var(--accent-color);
+	}
+}
+.nav__link {
+	display: block;
+	position: relative;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	margin-right: 50px;
+	transition: 250ms var(--timing-funktion);
+
+	&__link::hover,
+	&__link::focus {
+		width: 100%;
+	}
+}

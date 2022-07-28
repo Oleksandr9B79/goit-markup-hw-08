@@ -1,0 +1,33 @@
+/**utils styles*/
+
+@import "./utils/vars";
+@import "./utils/visually-hidden.scss";
+
+/**base styles*/
+
+@import "./base/common";
+@import "./base/reset";
+@import "./base/card-set";
+
+/**components styles*/
+
+@import "./components/buttons";
+@import "./components/container";
+@import "./components/section";
+@import "./components/nav";
+@import "./components/current";
+@import "./components/modal-window";
+@import "./components/checkbox";
+
+@import "./components/overlay";
+
+/**layouts styles*/
+
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/features";
+@import "./layouts/product";
+@import "./layouts/comads";
+@import "./layouts/clients";
+@import "./layouts/footer";
+@import "./layouts/portfolio";
