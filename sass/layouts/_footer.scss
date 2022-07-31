@@ -1,35 +1,3 @@
-.logo-footer {
-	display: block;
-	align-items: baseline;
-	font-family: Raleway;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.2;
-	color: var(--accent-color);
-}
-.part-logo-white {
-	color: var(--background-position);
-}
-.footer-container {
-	display: flex;
-	align-items: baseline;
-
-	@media screen and (max-width: 767px) {
-		flex-direction: column;
-	}
-
-	@media screen and (min-width: 768px) and (max-width: 1199px) {
-		flex-wrap: wrap;
-	}
-}
-.footer-left {
-	@media screen and (max-width: 1199px) {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-}
-
 .contact {
 	background-color: var(--primary-text-color);
 	padding-top: 60px;
@@ -40,8 +8,25 @@
 	color: var(--accent-color);
 }
 
+.footer-container {
+	display: flex;
+	align-items: baseline;
+}
+.logo-footer {
+	display: block;
+	align-items: baseline;
+	font-family: Raleway;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.2;
+	color: var(--accent-color);
+}
+
+.part-logo-white {
+	color: var(--background-position);
+}
+
 .adress {
-	text-align: center;
 	color: var(--background-position);
 	font-family: Roboto;
 	font-size: 14px;
@@ -50,21 +35,10 @@
 	letter-spacing: 0.03em;
 	margin-bottom: 9px;
 	transition: 250ms var(--timing-funktion);
-
-	@media scren and (min-width: 1200px) {
-		color: var(--background-position);
-		font-family: Roboto;
-		font-size: 14px;
-		line-height: 1.77;
-		font-style: normal;
-		letter-spacing: 0.03em;
-		margin-bottom: 9px;
-		transition: 250ms var(--timing-funktion);
+	&.link:hover,
+	&.link:focus {
+		color: var(--accent-color);
 	}
-}
-.adress .link:hover,
-.adress .link:focus {
-	color: var(--accent-color);
 }
 
 .contact-link {
@@ -75,21 +49,14 @@
 	font-style: normal;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
+	margin-bottom: 9px;
 	transition: 250ms var(--timing-funktion);
 }
 
 .footer-list {
+	display: block;
 	margin-top: 20px;
-	display: flex;
-	flex-direction: column;
-
-	.footer-list > .list {
-		@media screen and (max-width: 1199px) {
-			text-align: center;
-		}
-	}
 }
-
 .footer-list li {
 	margin-bottom: 9px;
 }
@@ -105,18 +72,6 @@
 	padding-top: 0;
 	margin-left: 70px;
 	position: relative;
-
-	@media screen and (max-width: 767px) {
-		margin: 60px 0;
-	}
-
-	@media screen and (min-width: 768px) {
-		margin-left: 165px;
-	}
-
-	@media screen and (min-width: 1200px) {
-		margin-left: 70px;
-	}
 }
 
 .footer-social-title {
@@ -128,15 +83,6 @@
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--background-position);
-
-	@media screen and (min-width: 768px) {
-		margin-top: 5px;
-	}
-
-	@media screen and (min-width: 1200px) {
-		text-align: left;
-		margin-top: 12px;
-	}
 }
 
 .social-set-list {
@@ -145,6 +91,10 @@
 	margin-top: 20px;
 }
 
+.social-set-item {
+	display: inline-block;
+	margin-right: 10px;
+}
 .footer-icon-link {
 	display: flex;
 	width: 44px;
@@ -161,10 +111,6 @@
 		transition: 850ms var(--timing-funktion);
 	}
 }
-.social-set-item {
-	display: inline-block;
-	margin-right: 10px;
-}
 
 .footer-icon {
 	fill: var(--background-position);
@@ -172,21 +118,10 @@
 /* Footer-label */
 
 .footer-label {
-	display: block;
+	display: inline;
 	position: relative;
 	padding-top: 0;
 	margin-left: auto;
-
-	@media screen and (min-width: 768px) and (max-width: 1199px) {
-		margin-top: 60px;
-	}
-
-	@media screen and (min-width: 1200px) {
-		display: inline;
-		position: relative;
-		margin-left: auto;
-		margin-right: 0;
-	}
 }
 
 .label-mail:focus,
@@ -197,7 +132,6 @@
 
 .label-title {
 	display: block;
-	align-items: baseline;
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 700;
@@ -208,12 +142,11 @@
 
 	color: var(--background-position);
 	margin-bottom: 20px;
-
-	@media screen and (min-width: 1200px) {
-		display: block;
-	}
 }
+
 .label-mail {
+	display: inline-flex;
+
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 400;
@@ -231,30 +164,7 @@
 	background: var(--primary-text-color);
 	cursor: pointer;
 	padding: 16px 15px;
-
-	@media screen and (max-width: 1199px) {
-		flex-direction: column;
-		justify-content: center;
-	}
-
-	@media screen and (max-width: 479px) {
-		width: 100%;
-		height: 50px;
-	}
-
-	@media screen and (min-width: 480px) {
-		width: 450px;
-		height: 50px;
-	}
-
-	@media screen and (min-width: 1200px) {
-		display: inline-flex;
-		width: 358px;
-		height: 50px;
-		margin-right: 12px;
-	}
 }
-
 .label-mail:focus {
 	outline: transparent;
 }
@@ -280,15 +190,6 @@
 	border-radius: 4px;
 	border-color: transparent;
 	cursor: pointer;
-
-	@media screen and (max-width: 1199px) {
-		display: flex;
-
-		margin-top: 20px;
-		margin-left: auto;
-		margin-right: auto;
-		align-items: center;
-	}
 }
 .lable-btn:hover,
 .lable-btn:focus {

@@ -1,10 +1,24 @@
 /* Checkbox */
 .check-label {
-	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 7px;
 	margin-top: 20px;
+
+	@media screen and (max-width: 479px) {
+		display: inline-block;
+		text-align: justify;
+	}
+
+	@media screen and (min-width: 480px) {
+		display: flex;
+	}
+
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		font-size: 14px;
+		line-height: 1.71;
+	}
 }
 
 .form-checkbox-custom {

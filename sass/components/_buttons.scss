@@ -28,6 +28,18 @@
 }
 .portfolio__button {
 	display: flex;
-	justify-content: center;
-	margin-bottom: 50px;
+	flex-wrap: wrap;
+	gap: 8px;
+	justify-content: flex-start;
+	margin-bottom: 40px;
+
+	@media screen and (min-width: 768px) {
+		margin-bottom: 30px;
+		justify-content: center;
+
+		@media screen and (min-width: 1200px) {
+			margin-bottom: 50px;
+			justify-content: center;
+		}
+	}
 }

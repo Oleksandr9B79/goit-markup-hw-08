@@ -1,3 +1,11 @@
+.portfolio {
+	display: flex;
+	flex-wrap: wrap;
+
+	@media screen and (min-width: 768px) {
+		justify-content: center;
+	}
+}
 .portfolio-text {
 	color: var(--title-text-color);
 	font-family: Roboto;
@@ -29,6 +37,7 @@
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-port {
+	display: flex;
 	position: relative;
 	overflow: hidden;
 }
@@ -50,4 +59,19 @@
 	letter-spacing: 0.03em;
 	color: #ffffff;
 	transition: 250ms var(--timing-funktion);
+}
+
+.portfolio__title {
+	@media screen and (min-width: 768px) {
+		justify-content: center;
+	}
+}
+.img-p {
+	@media screen and (min-width: 768px) {
+		width: 354px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 370px;
+	}
 }
