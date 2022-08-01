@@ -1214,6 +1214,12 @@ a.active {
 
 .comands {
   background-color: var(--baground-comands);
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .comands {
+    padding-top: 0;
+  }
 }
 
 .container__comands {

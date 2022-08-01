@@ -1,5 +1,10 @@
 .comands {
 	background-color: var(--baground-comands);
+	padding-top: 60px;
+
+	@media screen and (min-width: 1200px) {
+		padding-top: 0;
+	}
 }
 .container__comands {
 	color: var(--title-text-color);
