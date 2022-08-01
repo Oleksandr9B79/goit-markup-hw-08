@@ -2,6 +2,12 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+
+	// flex-basis: calc((100% - 90px) / 2)
+	@media screen and(min-width: 1200px) {
+		flex-wrap: nowrap;
+		gap: 0;
+	}
 }
 
 .clients__permanent {
@@ -17,13 +23,16 @@
 }
 .clients__link {
 	display: flex;
+
 	align-items: center;
 	fill: #afb1b8;
-	width: 170px;
+
+	flex-basis: calc((100% - 60px) / 2);
 	height: 92px;
 	justify-content: center;
 	border: 1px solid var(--background-border);
 	border-radius: 4px;
+	align-items: 2;
 
 	@media screen and (max-width: 767px) {
 		width: 210px;
