@@ -775,12 +775,19 @@ a.active {
   font-size: 26px;
   line-height: 1.2;
   color: var(--accent-color);
-  margin-right: 93px;
 }
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .header__logo {
     padding-top: 24px;
     padding-bottom: 25px;
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
   }
 }
 
